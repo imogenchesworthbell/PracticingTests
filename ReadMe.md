@@ -6,3 +6,7 @@ Coding along with the PluralSight course -
 Using the GitHub repository `testingwithjunit` by `weaverj` as a template and editing it to be able to use intellij and gradle
 
 Then coding along with the above pluralsight video.
+
+./gradlew clean test
+ to use gradle
+

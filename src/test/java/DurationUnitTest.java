@@ -7,7 +7,7 @@ class DurationUnitTest {
 
     @Test
     public void matchUnitBySingularString() {
-        assertEquals(DurationUnit.WEEK, DurationUnit.getByTextValue("week"));
+        assertSame(DurationUnit.WEEK, DurationUnit.getByTextValue("week"));
     }
 
     @Test
@@ -15,6 +15,9 @@ class DurationUnitTest {
         assertEquals(DurationUnit.WEEK, DurationUnit.getByTextValue("weeks"));
     }
 
-
+    @Test
+    public void returnsNullForUnmatchedUnit(){
+        assertNull(DurationUnit.getByTextValue("boop"));
+    }
 
 }
